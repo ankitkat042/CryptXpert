@@ -1,0 +1,141 @@
+:root {
+    --label-color: rgb(166, 188, 206);
+    --label-bg-color: rgb(22, 76, 106);
+    --sub-label-color: rgb(35, 50, 64);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #181818;
+}
+
+#app {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 15%;
+    background-color: var(--sub-label-color);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.algo-section {
+    margin-bottom: 0px;
+}
+
+.section-heading {
+    padding: 10px;
+    font-size: 1rem;
+    color: var(--label-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0px;
+    margin: 0;
+    background-color: var(--label-bg-color);
+}
+
+.algo-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.algo-list li {
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0px;
+    text-align: left;
+    color: #e8e6e3;
+}
+
+.algo-list li:hover {
+    background-color: rgb(42, 58, 75);
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.main-content h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.main-content p {
+    font-size: 1.2rem;
+    color: rgb(200, 195, 188);
+}
+
+/* Styling for the algo-description section */
+#algo-description {
+    padding: 0px;
+}
+
+.form-group label {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--label-color);
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--label-bg-color);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #e8e6e3;
+    border: 1px solid;
+    border-radius: 0px;
+    box-sizing: border-box;    
+    border-color: rgb(62, 68, 70);
+    background-color: rgb(24, 26, 27);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--label-color);
+    background-color: var(--label-bg-color);
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttons button:hover {
+    background-color: #2c80b4;
+}
+
+.buttons button:active {
+    background-color: #1c5f85;
+}

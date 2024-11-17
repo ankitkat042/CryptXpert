@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptography Frontend</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="sidebar">
+            <div class="algo-section">
+                <h3 class="section-heading symmetric">Symmetric</h3>
+                <ul id="symmetric-algos" class="algo-list"></ul>
+            </div>
+            <div class="algo-section">
+                <h3 class="section-heading asymmetric">Asymmetric</h3>
+                <ul id="asymmetric-algos" class="algo-list"></ul>
+            </div>
+            <div class="algo-section">
+                <h3 class="section-heading hash">Hashing</h3>
+                <ul id="hash-algos" class="algo-list"></ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1 id="algo-title" style="color: #e8e6e3">Select an Algorithm</h1>
+            <div id="algo-description">
+                <p>Select an algorithm from the sidebar to view its details.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>
